@@ -6,7 +6,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Hero() {
   const [text, setText] = useState("");
-  const fullText = "Full-Stack Developer";
+  const fullText = "AI Automation Expert";
   const speed = 100;
 
   useEffect(() => {
@@ -67,9 +67,9 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-7"
             >
-              I Build <span className="grad-text-warm">Intelligent</span>
+              I Architect <span className="grad-text-warm">Intelligent</span>
               <br />
-              Digital Solutions
+              AI & Digital Systems
             </motion.h1>
 
             {/* Typewriter */}
@@ -94,7 +94,7 @@ export default function Hero() {
               transition={{ delay: 1, duration: 0.6 }}
               className="max-w-xl text-text-2 text-base md:text-lg leading-relaxed mb-10"
             >
-              From <strong className="text-text">AI-powered business automation</strong> and <strong className="text-text">intelligent chatbots</strong> to <strong className="text-text">custom web platforms</strong> — I engineer products that scale your business.
+              From <strong className="text-text">business workflow automation</strong> and <strong className="text-text">custom AI agents</strong> to <strong className="text-text">scalable SaaS ecosystems</strong> — I engineer high-performance solutions that scale your business.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -142,7 +142,7 @@ export default function Hero() {
                 <div className="relative h-full w-full rounded-[2.2rem] overflow-hidden">
                   <img 
                     src="/mahmudul.jpg" 
-                    alt="Mahmudul Hassan"
+                    alt="Mahmudul Hassan — AI Automation Architect & Lead Developer"
                     className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-1000"
                   />
                   {/* Overlay Gradient */}

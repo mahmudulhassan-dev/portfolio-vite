@@ -59,9 +59,9 @@ export default function Automation() {
                     <f.icon className="w-6 h-6 text-cyan" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-text group-hover:text-cyan transition-colors mb-2">
+                    <h3 className="font-bold text-text group-hover:text-cyan transition-colors mb-2">
                       {f.title}
-                    </h4>
+                    </h3>
                     <p className="text-sm text-text-3 leading-relaxed">
                       {f.desc}
                     </p>

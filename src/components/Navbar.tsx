@@ -65,7 +65,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 group relative overflow-hidden" aria-label="Home">
+        <a href="#home" className="flex items-center gap-3 group relative overflow-hidden" aria-label="Mahmudul Hassan — Back to Home">
           <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan via-blue to-purple flex items-center justify-center text-bg font-black text-sm glow-xs transition-all duration-500 group-hover:scale-105 group-hover:rotate-3 shadow-lg">
             MH
           </div>
@@ -102,6 +102,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="#contact"
+            aria-label="Start a project with Mahmudul"
             className="group inline-flex items-center gap-3 px-8 py-3 rounded-2xl bg-gradient-to-r from-cyan/90 to-blue text-bg text-[13px] font-black uppercase tracking-widest hover:glow-md transition-all duration-500 hover:scale-[1.03] active:scale-95 shadow-xl shadow-cyan/10 overflow-hidden relative"
           >
             <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />

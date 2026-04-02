@@ -38,15 +38,15 @@ export default function About() {
                   <div className="w-full h-full rounded-[0.9rem] overflow-hidden">
                     <img 
                       src="/mahmudul.jpg" 
-                      alt="Mahmudul Hassan"
+                      alt="Mahmudul Hassan - AI Automation Architect & Lead Developer"
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
 
                 <h3 className="text-xl font-bold mb-1">Mahmudul Hassan</h3>
-                <p className="text-cyan text-xs font-bold uppercase tracking-wider mb-6">
-                  AI Automation Expert & Full-Stack Developer
+                <p className="text-cyan text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                  AI Automation Architect & Lead Developer
                 </p>
 
                 <div className="space-y-4 text-left">
@@ -80,10 +80,10 @@ export default function About() {
             <div className="space-y-6 text-text-2 text-lg leading-relaxed">
               <p>
                 I&apos;m not just a developer — I&apos;m a{" "}
-                <strong className="text-text">business solution architect</strong> who understands that great technology must serve real business goals. I combine{" "}
-                <strong className="text-cyan">AI automation expertise</strong> with{" "}
-                <strong className="text-text">modern full-stack development</strong> to create systems that don&apos;t just work — they{" "}
-                <em className="text-cyan not-italic">automate, scale, and convert.</em>
+                <strong className="text-text">systems architect</strong> who bridges the gap between technology and business growth. I combine{" "}
+                <strong className="text-cyan">high-level AI automation</strong> with{" "}
+                <strong className="text-text">enterprise-grade full-stack engineering</strong> to create digital ecosystems that{" "}
+                <em className="text-cyan not-italic">automate workflows and drive results.</em>
               </p>
               <p>
                 My approach is unique: I think like a <strong className="text-text">product builder</strong>, not just a coder. Every line of code I write, every automation I design, and every AI agent I create is engineered to drive measurable business outcomes — whether that&apos;s reducing manual work by 80%, capturing more leads, or building a platform that serves thousands of users.
@@ -96,14 +96,14 @@ export default function About() {
             <div className="flex flex-wrap gap-3">
               {[
                 "AI Automation",
-                "Business Strategy",
-                "Product Thinking",
+                "Workflow Optimization",
+                "LLM Engineering",
+                "Product Strategy",
                 "Clean Architecture",
-                "Fast Delivery",
-                "Scalable Systems",
-                "CMS Expert",
+                "SaaS Ecosystems",
+                "Next.js Expert",
+                "Supabase",
                 "DevOps",
-                "SaaS Builder",
               ].map((tag) => (
                 <span
                   key={tag}

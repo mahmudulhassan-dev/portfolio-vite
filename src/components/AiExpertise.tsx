@@ -58,9 +58,9 @@ export default function AiExpertise() {
                 <a.icon className={`w-7 h-7 text-${a.color}`} />
               </div>
 
-              <h4 className="text-xl font-bold mb-4 group-hover:text-text transition-colors">
+              <h3 className="text-xl font-bold mb-4 group-hover:text-text transition-colors">
                 {a.title}
-              </h4>
+              </h3>
               <p className="text-sm text-text-3 leading-relaxed mb-6">
                 {a.desc}
               </p>

@@ -1,30 +1,37 @@
-import { SYSTEM_PROMPT, WELCOME_MESSAGE } from "./system-prompt";
+interface ChatMessage {
+  role: "user" | "assistant" | "system";
+  content: string;
+}
 
-export async function getChatReply(userMessage: string): Promise<string> {
-  // Simulate AI processing delay
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+export async function getChatReply(
+  prompt: string, 
+  history: ChatMessage[] = [],
+  conversationId?: string,
+  type: string = "text",
+  mediaUrl?: string
+) {
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        messages: [...history, { role: "user", content: prompt }],
+        conversationId,
+        type,
+        mediaUrl
+      }),
+    });
 
-  const msg = userMessage.toLowerCase();
+    if (!response.ok) {
+      throw new Error("Chat network response was not ok");
+    }
 
-  if (msg.includes("hello") || msg.includes("hi")) {
-    return "Hello! I'm Mahmudul's virtual assistant. How can I help you today?";
+    const data = await response.json();
+    return data.reply as string;
+  } catch (error) {
+    console.error("AI Assistant Error:", error);
+    return "I'm having a bit of trouble connecting to Mahmudul's systems right now. Could you please try again in a moment?";
   }
-
-  if (msg.includes("service") || msg.includes("offer")) {
-    return "Mahmudul offers AI Automation Systems, Custom Web Development (React/Next.js), and AI Agent Engineering. Which one interests you?";
-  }
-
-  if (msg.includes("automation") || msg.includes("ai")) {
-    return "He specializes in building intelligent business ecosystems using LLMs (OpenAI, Anthropic) and automation tools like n8n and Make.com.";
-  }
-
-  if (msg.includes("project") || msg.includes("work")) {
-    return "You can see some of his work in the 'Projects' section of this site, including SaaS dashboards and AI customer support systems.";
-  }
-
-  if (msg.includes("contact") || msg.includes("hire") || msg.includes("email")) {
-    return "You can reach Mahmudul via the contact form on this page or email him directly at hello@mahmudulhassan.dev.";
-  }
-
-  return "That's an interesting question! I recommend reaching out to Mahmudul directly through the contact form for a detailed discussion about your specific needs.";
 }

@@ -56,10 +56,16 @@ export default function Projects() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-bg/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <button className="w-12 h-12 rounded-full bg-cyan text-bg flex items-center justify-center hover:scale-110 transition-transform">
+                  <button 
+                    aria-label={`View live demo of ${p.title}`}
+                    className="w-12 h-12 rounded-full bg-cyan text-bg flex items-center justify-center hover:scale-110 transition-transform"
+                  >
                     <ExternalLink className="w-5 h-5" />
                   </button>
-                  <button className="w-12 h-12 rounded-full bg-surface-2 text-text flex items-center justify-center hover:scale-110 transition-transform border border-border">
+                  <button 
+                    aria-label={`View source code of ${p.title} on GitHub`}
+                    className="w-12 h-12 rounded-full bg-surface-2 text-text flex items-center justify-center hover:scale-110 transition-transform border border-border"
+                  >
                     <GithubIcon className="w-5 h-5" />
                   </button>
                 </div>
@@ -97,6 +103,7 @@ export default function Projects() {
 
                 <a
                   href="#"
+                  aria-label={`View detailed case study for ${p.title}`}
                   className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-text hover:text-cyan transition-all group-hover:gap-4"
                 >
                   Project Details

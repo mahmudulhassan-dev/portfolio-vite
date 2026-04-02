@@ -46,9 +46,9 @@ export default function TechCms() {
                 <g.icon className="w-7 h-7 text-cyan" />
               </div>
 
-              <h4 className="text-xl font-bold mb-6 group-hover:text-cyan transition-colors">
+              <h3 className="text-xl font-bold mb-6 group-hover:text-cyan transition-colors">
                 {g.category}
-              </h4>
+              </h3>
 
               <div className="flex flex-wrap gap-2">
                 {g.techs.map((t) => (

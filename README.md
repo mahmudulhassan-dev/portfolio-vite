@@ -1,174 +1,97 @@
-# Mahmudul Hassan — AI Automation Expert & Full-Stack Developer
+# Mahmudul Hassan — AI Automation Ecosystems & Full-Stack Engineering
 
-A premium, high-performance portfolio website showcasing AI automation expertise, full-stack development, CMS solutions, and business-focused digital products.
+A high-performance, secure, and AI-driven portfolio architecture designed for scalability, intelligence, and premium user experience. Built with a focus on business automation and state-of-the-art web technology.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?style=for-the-badge&logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-FF0055?style=for-the-badge&logo=framer)
+![AI Engine](https://img.shields.io/badge/Gemini_2.5_Pro-Google_AI-4285F4?style=for-the-badge&logo=google-gemini)
+![Database](https://img.shields.io/badge/Supabase-DB_%26_RLS-3ECF8E?style=for-the-badge&logo=supabase)
+![Security](https://img.shields.io/badge/Security-Proxy_%26_Rate_Limit-red?style=for-the-badge&logo=shieldcheck)
 
 ---
 
-## ✨ Features
+## ✨ Premium Features
 
-### Core
-- **AI Chat Assistant** — Floating widget with business-aware responses, lead qualification, and service explanations
-- **Premium Dark Theme** — Deep dark UI with cyan/blue glow accents and glassmorphism
-- **Smooth Animations** — Framer Motion scroll reveals, typewriter effects, hover interactions
-- **Fully Responsive** — Mobile-first design with accordion footer and mobile navigation
-- **SEO Optimized** — Meta tags, Open Graph, semantic HTML, proper heading hierarchy
+### 🤖 Intelligent AI Assistant
+- **Engine**: Powered by **Google Gemini 2.5 Pro** ("Thinking" Reasoning Model).
+- **Capabilities**: Conversational intelligence, context-aware service expertise, and automated lead capture.
+- **Backend**: Real-time message storage in Supabase with anonymous/authenticated session tracking.
 
-### Sections
-1. **Hero** — Animated typewriter, stats grid, dual CTAs
-2. **About** — Profile card with traits, expertise tags
-3. **Services** — 6 service cards with gradient accents
-4. **AI Automation** — Business automation showcase with outcome metrics
-5. **Tech Stack & CMS** — Skill bars + 6 CMS platform cards with "when to use" guidance
-6. **Projects** — Portfolio with business impact metrics
-7. **AI & Prompt Expertise** — AI agent architecture + development process timeline
-8. **Contact** — Form + contact info cards + social links
-9. **Footer** — CTA banner, 4-column layout, mobile accordion, social icons
+### 🛡️ Enterprise-Grade Security
+- **API Protection**: Custom **Proxy Layer** with IP-based rate limiting (10 requests/min/IP) to prevent spam and cost overflows.
+- **Database Security**: Row Level Security (RLS) policies implemented on all tables (`messages`, `conversations`, `contact_inquiries`).
+- **Storage Protection**: Secure file/media upload policies for chat attachments (`chat-media` bucket).
 
-### Design System
-- Glassmorphism cards with hover glow effects
-- Interactive cards with radial mouse-follow gradient
-- Gradient border reveals on hover
-- Custom scrollbar, noise texture, grid pattern overlays
-- Lucide React icon system
+### 🚀 Real-time Ecosystem
+- **Admin Alerts**: Instant notifications via **Telegram Bot API** for every new lead or chat inquiry.
+- **Data Persistence**: Full conversation history saved across browser sessions via local storage and Supabase sync.
+- **Automated Workflow**: Contact forms automatically trigger telegram alerts and database entries.
+
+### 💎 High-Performance UI
+- **Turbopack Optimized**: Built on Next.js 16 with the faster compilation engine.
+- **Motion Design**: Framer Motion 12+ for scroll-reveal sections, typewriter effects, and 3D glassmorphic cards.
+- **Hydration Safe**: Solved React SSR/Client mismatches for a zero-error production build.
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 16 (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS 4 |
-| Animations | Framer Motion |
-| Icons | Lucide React |
-| Fonts | Inter + JetBrains Mono (via `next/font`) |
-| Database | Supabase (prepared) |
-| AI | OpenAI API (prepared) |
-| Deployment | Vercel |
-
----
-
-## 📁 Project Structure
-
-```
-src/
-├── app/
-│   ├── api/
-│   │   └── chat/
-│   │       └── route.ts          # AI chat API endpoint
-│   ├── globals.css               # Design system & utilities
-│   ├── layout.tsx                # Root layout with fonts & metadata
-│   └── page.tsx                  # Home page (all sections)
-├── components/
-│   ├── ui/
-│   │   └── motion.tsx            # Reveal, ScaleReveal, SectionHeader
-│   ├── Navbar.tsx                # Fixed navbar with mobile menu
-│   ├── Hero.tsx                  # Hero with typewriter & stats
-│   ├── About.tsx                 # About section
-│   ├── Services.tsx              # Services grid
-│   ├── Automation.tsx            # AI automation section
-│   ├── TechCms.tsx               # Tech stack & CMS expertise
-│   ├── Projects.tsx              # Portfolio projects
-│   ├── AiExpertise.tsx           # AI & prompt engineering
-│   ├── Contact.tsx               # Contact form & info
-│   ├── Footer.tsx                # Premium footer
-│   └── ChatWidget.tsx            # Floating AI chat
-└── lib/
-    ├── supabase.ts               # Supabase client config
-    └── system-prompt.ts          # AI assistant system prompt
-```
+| Layer | Technology | Status |
+|-------|-----------|--------|
+| **Framework** | Next.js 16 (App Router + Turbopack) | ✅ Implemented |
+| **AI Core** | Google AI SDK (Gemini 2.5 Pro) | ✅ Implemented |
+| **Database** | Supabase (Postgres + Realtime) | ✅ Implemented |
+| **Security** | Proxy-based Rate Limiting + RLS | ✅ Implemented |
+| **Real-time** | Telegram Bot API | ✅ Implemented |
+| **Styling** | Tailwind CSS 4 | ✅ Implemented |
+| **Animations** | Framer Motion + Particles.js | ✅ Implemented |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 1. Prerequisites
 - Node.js 18+
-- npm or yarn
+- Supabase Project (Postgres + Storage)
+- Google AI API Key (Gemini)
+- Telegram Bot API Key (for alerts)
 
-### Installation
-
+### 2. Environment Setup
+Create a `.env.local` file with the following mapping:
 ```bash
-# Clone the repository
-git clone https://github.com/mahmudulhassan-dev/mahmudulhassan-dev.git
-cd mahmudulhassan-dev
+# Google AI Intelligence
+GOOGLE_GEMINI_API_KEY=your_gemini_pro_key
 
-# Install dependencies
+# Supabase (Real-time DB & Auth)
+NEXT_PUBLIC_SUPABASE_URL=your_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+
+# Admin Alerts (Telegram)
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+```
+
+### 3. Installation
+```bash
+# Clone
+git clone https://github.com/mahmudulhassan-dev/portfolio-nextjs.git
+cd portfolio-nextjs
+
+# Install
 npm install
 
-# Copy environment variables
-cp .env.local.example .env.local
-# Edit .env.local with your keys
-
-# Start development server
+# Build & Run (Dev)
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-### Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | For DB features |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key | For DB features |
-| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key | For server-side DB |
-| `OPENAI_API_KEY` | OpenAI API key | For AI chat |
-| `NEXT_PUBLIC_SITE_URL` | Public site URL | Optional |
-
 ---
 
-## ☁️ Deployment
-
-### Vercel (Recommended)
-
-1. Push your repository to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import Project
-3. Select your GitHub repository
-4. Add environment variables in Vercel dashboard
-5. Deploy — Vercel auto-detects Next.js
-
-```bash
-# Or deploy via CLI
-npm i -g vercel
-vercel
-```
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
----
-
-## 🗄 Supabase Setup
-
-1. Create a project at [supabase.com](https://supabase.com)
-2. Copy project URL and anon key to `.env.local`
-3. Uncomment the Supabase client code in `src/lib/supabase.ts`
-4. Install the Supabase client: `npm install @supabase/supabase-js`
-
----
-
-## 🤖 AI Chat Setup
-
-The chat widget works out of the box with built-in response logic. To enable OpenAI-powered responses:
-
-1. Get an API key from [platform.openai.com](https://platform.openai.com)
-2. Add `OPENAI_API_KEY` to `.env.local`
-3. Install OpenAI SDK: `npm install openai`
-4. Uncomment the OpenAI integration in `src/app/api/chat/route.ts`
+## 🗄 Database Architecture
+The system uses three primary tables in Supabase:
+- `conversations`: Tracks unique chat sessions and user metadata.
+- `messages`: Stores chat history (role, content, media_url, conversation_id).
+- `contact_inquiries`: Stores direct leads from the contact form.
 
 ---
 
 ## 📄 License
-
-MIT © Mahmudul Hassan
+MIT © [Mahmudul Hassan](https://mahmudulhassan.dev)
