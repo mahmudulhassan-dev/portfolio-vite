@@ -7,24 +7,24 @@ import { SectionHeader } from "./ui/motion";
 
 const projects = [
   {
-    title: "AI Sales Automation Platform",
-    desc: "An enterprise-level platform that automates lead research, qualifies prospects using GPT-4, and schedules meetings 24/7.",
-    image: "https://images.unsplash.com/photo-1664575196412-ed801e83f427?auto=format&fit=crop&q=80&w=800",
-    tags: ["n8n", "OpenAI", "Next.js", "TypeScript"],
-    icon: Bot,
-  },
-  {
-    title: "Headless Shopify Storefront",
-    desc: "A custom high-performance e-commerce experience built with Next.js and Shopify Hydrogen, optimized for speed and conversion.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
-    tags: ["React", "Shopify", "TailwindCSS", "Node.js"],
+    title: "AmanaMart — Multi-Vendor Commerce Ecosystem",
+    desc: "A white-labeled multi-vendor marketplace running Bangladesh's fashion, electronics and daily-essentials trade. Laravel 12 + Next.js 15 storefront on one server, with a Vendor Website Builder addon that gives every vendor their own branded storefront subdomain, Reels, Tax and AI modules.",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+    tags: ["Laravel 12", "Next.js 15", "Multi-Vendor", "PHP 8.3"],
     icon: Globe,
   },
   {
-    title: "Real-time SaaS Portfolio",
-    desc: "A premium dashboard for tracking assets, revenue, and usage metrics across multiple SaaS products with real-time data streaming.",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800",
-    tags: ["TypeScript", "Supabase", "Framer Motion", "Vercel"],
+    title: "Amana AI Smart Model Router",
+    desc: "A production routing gateway that sends every request to the best available free model first, fails over free-to-free, and only then falls back to a hard cost ceiling. Task classification, quota and health tracking, budget ceilings, an OpenAI-compatible endpoint and a live dashboard.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+    tags: ["Python", "FastAPI", "OpenRouter", "Quotas"],
+    icon: Bot,
+  },
+  {
+    title: "Production Server Operations & Automation",
+    desc: "Full-stack ops for a 31 GB Ubuntu host running 30+ production sites: disk-exhaustion forensics, backup retention automation, SMTP queue incident response, SSH and aaPanel recovery, PHP-FPM and nginx repair, plus a daily Google Drive backup pipeline that never fills the disk again.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+    tags: ["Linux", "Docker", "Nginx", "Bash"],
     icon: Code2,
   },
 ];

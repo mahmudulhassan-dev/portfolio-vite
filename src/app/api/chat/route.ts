@@ -20,8 +20,8 @@ export async function POST(request: NextRequest) {
 
     const lastMessage = messages[messages.length - 1]?.content || "";
 
-    // 1. Save User Message to Supabase
-    if (conversationId) {
+    // 1. Save User Message to Supabase (optional — skipped when unconfigured)
+    if (conversationId && supabase) {
       await supabase.from("messages").insert({
         conversation_id: conversationId,
         role: "user",
@@ -61,8 +61,8 @@ export async function POST(request: NextRequest) {
     const result = await chat.sendMessage(lastMessage);
     const reply = result.response.text();
 
-    // 4. Save AI Reply to Supabase
-    if (conversationId) {
+    // 4. Save AI Reply to Supabase (optional — skipped when unconfigured)
+    if (conversationId && supabase) {
       await supabase.from("messages").insert({
         conversation_id: conversationId,
         role: "assistant",

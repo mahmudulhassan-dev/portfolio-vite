@@ -129,6 +129,11 @@ export default function ChatWidget() {
     if (!file) return;
 
     try {
+      if (!supabase) {
+        alert("Media upload is unavailable right now. Please send text instead.");
+        return;
+      }
+
       const fileExt = file.name.split('.').pop();
       const fileName = `${crypto.randomUUID()}.${fileExt}`;
       const filePath = `chat/${fileName}`;
@@ -168,7 +173,12 @@ export default function ChatWidget() {
 
       mediaRecorder.onstop = async () => {
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-        
+
+        if (!supabase) {
+          alert("Voice messages are unavailable right now. Please send text instead.");
+          return;
+        }
+
         const fileName = `voice-${crypto.randomUUID()}.webm`;
         const { error } = await supabase.storage
           .from('chat-media')

@@ -13,6 +13,7 @@ import {
   Menu,
   X,
   ChevronRight,
+  Activity,
 } from "lucide-react";
 
 const links = [
@@ -20,6 +21,7 @@ const links = [
   { href: "#services", label: "Solutions", icon: Briefcase }, // Consolidates Services + AI Automation
   { href: "#tech", label: "Expertise", icon: Layers }, // Consolidates Tech + AI Expertise
   { href: "#projects", label: "Portfolio", icon: FolderKanban }, // Professional rename for Projects
+  { href: "#ops", label: "Live Ops", icon: Activity }, // Real-time production infrastructure
   { href: "#about", label: "About", icon: User },
   { href: "#contact", label: "Contact", icon: Mail },
 ];

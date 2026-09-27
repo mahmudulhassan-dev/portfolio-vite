@@ -33,16 +33,18 @@ export default function Contact() {
     setStatus("sending");
     
     try {
-      // 1. Save to Supabase
-      const { error } = await supabase.from("contact_inquiries").insert({
-        name: formData.name,
-        email: formData.email,
-        budget: budget,
-        services: selectedServices,
-        brief: formData.brief
-      });
+      // 1. Save to Supabase (optional — skipped when the project isn't configured)
+      if (supabase) {
+        const { error } = await supabase.from("contact_inquiries").insert({
+          name: formData.name,
+          email: formData.email,
+          budget: budget,
+          services: selectedServices,
+          brief: formData.brief
+        });
 
-      if (error) throw error;
+        if (error) throw error;
+      }
 
       // 2. Trigger Telegram Alert (via your API)
       await axios.post("/api/chat", {

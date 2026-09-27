@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Automation from "@/components/Automation";
 import TechCms from "@/components/TechCms";
 import Projects from "@/components/Projects";
+import LiveOps from "@/components/LiveOps";
 import AiExpertise from "@/components/AiExpertise";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -23,6 +24,7 @@ export default function Home() {
         <Automation />
         <TechCms />
         <Projects />
+        <LiveOps />
         <AiExpertise />
         <Contact />
       </main>
